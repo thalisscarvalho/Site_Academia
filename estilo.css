@@ -1,0 +1,646 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body {
+    background-color: black;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+}
+div #menu {
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+main ul {
+    display: inline-flex;
+    list-style: none;
+}
+main li {
+    font-size: 15pt;
+    padding: 5px;
+    font-family: monospace;
+    background-color: rgba(235, 220, 220, 0.459);
+    margin-left: 5px;
+}
+main li:hover {
+    font-size: 16pt;
+    color: yellow;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*------------------------------*/
+div #top {
+    background-image: url('imgs/imgcapa.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#top h1, h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+#top h1 {
+    color: white;
+}
+
+#top h2 {
+    color: rgb(216, 198, 40);
+    font-size: 50pt;
+}
+div .cont {
+    overflow: hidden;
+    width: 100%;
+}
+
+/*programas*/
+div #progra {
+    position: relative;
+    background: linear-gradient(to right, rgb(224, 175, 14) 20%, rgb(206, 183, 83) 80%);
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+img#peso1 {
+    position: absolute;
+    width: 250px;
+    left: 80%;
+    top: 0%;
+
+}
+img#peso2 {
+    position: absolute;
+    width: 250px;
+    left: 5%;
+    top: 0%;
+
+}
+
+
+/*studio*/
+.studio {
+    display: inline-block;
+    width: 480px;
+    height: 42vh;
+    margin: 50px;
+    font-size: 15pt;
+    color: white;
+    box-shadow: 2px 5px 5px rgb(29, 27, 27);
+    border-radius: 2%;
+}
+h2#prog {
+    border: 2px solid black;
+    border-top: 1px solid gold;
+    width: 50%;
+    margin: auto;
+    font-size: 40pt;
+    text-align: center;
+}
+.studio img {
+    width: 100%;
+    height: 43vh;
+}
+span {
+    font-size: 22pt;
+    color:yellow;
+}
+
+/*sobre*/
+.studio h3 {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    border-radius: 10%;
+    border: 1px solid yellow;
+    margin-top: -5%;
+    margin-left: 11%;
+    cursor: pointer;
+}
+.studio p {
+    background-color: rgb(0, 0, 0);
+    width: 18%;
+}
+/*professores*/
+#prof {
+    background-color: rgb(46, 45, 41);
+}
+#prof h2#pro {
+    border: 1px solid yellow;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    font-size: 25pt;
+    text-align: center;
+}
+#prof h2 {
+    color: white;
+    border-bottom: 1px solid yellow;
+
+}
+.ps {
+    display: inline-block;
+    width: 420px;
+    height: 45vh;
+    margin: 50px;
+    font-size: 15pt;
+    color: white;
+    box-shadow: 2px 5px 35px rgb(29, 27, 27);
+    overflow: hidden;
+}
+.ps h2, p {
+    position: absolute;
+    margin-top: -10%;
+    width: 400px;
+    padding: 5px;
+
+}
+.ps h2 {
+    position: absolute;
+    margin-top: -16%;
+    font-size: 25pt;
+    transition: 0.3s;
+}
+.ps h2:hover{
+    color: yellow;
+    cursor: pointer;
+    font-size: 28pt;
+    transition: 0,3s;
+  
+}
+.ps img {
+    width: 100%;
+    height: 45vh;
+}
+footer {
+    background-color:yellow;
+    display: inline-flexbox;
+}
+footer li {
+    display:  inline-flex;
+    font-size: 20pt;
+}
+footer li:hover {
+    color: black;
+    font-size: 20pt;
+    cursor: auto;
+}
+footer img {
+    width: 50px;
+    margin-top: 8px;
+    padding: 10px;
+    margin-left: 10px;
+}
+img#whats {
+    position: fixed;
+    margin: auto;
+    bottom: 2%;
+    right: 2%;
+}
+
+
+/*900px*/
+@media  (max-width: 950px) {
+    div #top {
+        background-image: url('imgs/imgcapa.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #top h1, h2 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #top h1 {
+        color: white;
+    }
+    
+    #top h2 {
+        color: rgb(216, 198, 40);
+        font-size: 30pt;
+    }
+    main ul {
+        display: inline-flex;
+        list-style: none;
+        font-size: 10pt;
+    }
+    /*programas*/
+    h2#prog {
+        font-size: 20pt;
+    }
+    img#peso1 {
+        position: absolute;
+        width: 110px;
+        left: 80%;
+        top: 0%;
+    
+    }
+    img#peso2 {
+        position: absolute;
+        width: 110px;
+        left: 5%;
+        top: 0%;
+    
+    }
+    .studio {
+        display: inline-block;
+        width: 320px;
+        height: 40vh;
+        margin: 50px;
+        font-size: 10pt;
+        color: white;
+        box-shadow: 2px 5px 5px rgb(29, 27, 27);
+        border-radius: 2%;
+        overflow: hidden;
+    }
+    .studio h3 {
+        position: absolute;
+        color: rgb(0, 0, 0);
+        background-color: yellow;
+        border-radius: 10%;
+        outline: none;
+        margin-top: 0%;
+        margin-left: 120px;
+        cursor: pointer;
+    }
+    .studio p {
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        margin-top: -50%;
+        width: 50%;
+    }
+    /*professores*/
+#prof {
+    background-color: rgb(46, 45, 41);
+}
+#prof h2#pro {
+    border: 1px solid yellow;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    font-size: 15pt;
+    text-align: center;
+}
+.ps {
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    height: 40vh;
+    margin: 50px;
+    font-size: 15pt;
+    color: white;
+    box-shadow: 2px 5px 35px rgb(29, 27, 27);
+    overflow: hidden;
+}
+.ps p {
+    position: absolute;
+    margin-top: -45%;
+    width: 300px;
+    padding: 5px;
+    font-size: 10pt;
+
+}
+#prof h2 {
+    color: white;
+    width: 320px;
+    border-bottom: 1px solid yellow;
+    font-size: 15pt;
+    margin-top: -60%;
+    left: -20%
+}
+.ps h2 {
+    position: absolute;
+    margin-top: -50%;
+    color: rgb(255, 255, 255);
+    font-size: 25pt;
+    transition: 0.3s;
+}
+footer li {
+        display:  inline-flex;
+        font-size: 10pt;
+}
+footer li:hover {
+        color: black;
+        font-size: 10pt;
+        cursor: auto;
+}
+footer img {
+        width: 30px;
+        margin-top: 8px;
+        padding: 10px;
+        margin-left: 10px;
+}
+    
+}
+
+
+/*700px*/
+@media  (max-width: 700px) {
+    div #top {
+        background-image: url('imgs/imgcapa.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #top h1, h2 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #top h1 {
+        color: white;
+    }
+    
+    #top h2 {
+        color: rgb(216, 198, 40);
+        font-size: 30pt;
+    }
+    main ul {
+        display: inline-flex;
+        list-style: none;
+        font-size: 10pt;
+    }
+    /*programas*/
+    h2#prog {
+        font-size: 20pt;
+    }
+    img#peso1 {
+        position: absolute;
+        width: 110px;
+        left: 80%;
+        top: 0%;
+    
+    }
+    img#peso2 {
+        position: absolute;
+        width: 110px;
+        left: 5%;
+        top: 0%;
+    
+    }
+    .studio {
+        display: inline-block;
+        width: 320px;
+        height: 40vh;
+        margin: 50px;
+        font-size: 10pt;
+        color: white;
+        box-shadow: 2px 5px 5px rgb(29, 27, 27);
+        border-radius: 2%;
+        overflow: hidden;
+    }
+    .studio h3 {
+        position: absolute;
+        color: rgb(0, 0, 0);
+        background-color: yellow;
+        border-radius: 10%;
+        outline: none;
+        margin-top: 20%;
+        margin-left: 130px;
+        cursor: pointer;
+    }
+    .studio p {
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        margin-top: -90%;
+        width: 50%;
+    }
+
+    /*professores*/
+#prof {
+    background-color: rgb(46, 45, 41);
+}
+#prof h2#pro {
+    border: 1px solid yellow;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    font-size: 15pt;
+    text-align: center;
+}
+.ps {
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    height: 40vh;
+    margin: 50px;
+    font-size: 15pt;
+    color: white;
+    box-shadow: 2px 5px 35px rgb(29, 27, 27);
+    overflow: hidden;
+}
+.ps p {
+    position: absolute;
+    margin-top: -45%;
+    width: 300px;
+    padding: 5px;
+    font-size: 10pt;
+
+}
+#prof h2 {
+    color: white;
+    width: 320px;
+    border-bottom: 1px solid yellow;
+    font-size: 15pt;
+    margin-top: -60%;
+    left: -20%
+}
+.ps h2 {
+    position: absolute;
+    margin-top: -50%;
+    color: rgb(255, 255, 255);
+    font-size: 25pt;
+    transition: 0.3s;
+}
+.ps img {
+    width: 100%;
+    height: 45vh;
+}
+/*footer*/
+footer {
+    background-color:yellow;
+    display: inline-flexbox;
+}
+footer li {
+    display:  inline-block;
+}
+footer li:hover {
+    color: black;
+    font-size: 15pt;
+    cursor: auto;
+}
+footer img {
+    width: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+    
+}
+@media  (max-width: 450px) {
+    div #top {
+        background-image: url('imgs/imgcapa.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #top h1, h2 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #top h1 {
+        color: white;
+    }
+    
+    #top h2 {
+        color: rgb(216, 198, 40);
+        font-size: 30pt;
+    }
+    main li {
+        display: inline-flex;
+        list-style: none;
+        font-size: 10pt;
+    }
+    main li:hover {
+        font-size: 12pt;
+    }
+    /*programas*/
+    h2#prog {
+        font-size: 20pt;
+    }
+    img#peso1 {
+        position: absolute;
+        width: 80px;
+        left: 80%;
+        top: 0%;
+    
+    }
+    img#peso2 {
+        position: absolute;
+        width: 80px;
+        left: 5%;
+        top: 0%;
+    
+    }
+    .studio {
+        display: inline-block;
+        width: 330px;
+        height: 40vh;
+        margin: 10px;
+        font-size: 10pt;
+        color: white;
+        box-shadow: 2px 5px 5px rgb(29, 27, 27);
+        border-radius: 2%;
+        overflow: hidden;
+    }
+    .studio h3 {
+        position: absolute;
+        color: rgb(0, 0, 0);
+        background-color: yellow;
+        border-radius: 10%;
+        outline: none;
+        margin-top: 30%;
+        margin-left: 130px;
+        cursor: pointer;
+    }
+    .studio p {
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        margin-top: -80%;
+        width: 50%;
+        border-radius: 2%;
+    }
+
+        /*professores*/
+#prof {
+    background-color: rgb(46, 45, 41);
+}
+#prof h2#pro {
+    border: 1px solid yellow;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    font-size: 15pt;
+    text-align: center;
+}
+.ps {
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    height: 40vh;
+    margin: 11%;
+    margin-left: auto;
+    font-size: 15pt;
+    color: white;
+    box-shadow: 2px 5px 35px rgb(29, 27, 27);
+    overflow: hidden;
+}
+.ps p {
+    position: absolute;
+    margin-top: -45%;
+    width: 300px;
+    padding: 5px;
+    font-size: 10pt;
+
+}
+#prof h2 {
+    color: white;
+    width: 320px;
+    border-bottom: 1px solid yellow;
+    font-size: 15pt;
+    margin-top: -60%;
+    left: -20%
+}
+.ps h2 {
+    position: absolute;
+    margin-top: -50%;
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    transition: 0.3s;
+}
+.ps img {
+    width: 100%;
+    height: 45vh;
+}
+footer {
+    background-color:yellow;
+    display: inline-flexbox;
+}
+footer li {
+    display: block;
+    font-size: 10pt;
+    margin-left: 5px;
+}
+footer li:hover {
+    color: black;
+    font-size: 10pt;
+    cursor: auto;
+}
+footer img {
+    width: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+    
+}
